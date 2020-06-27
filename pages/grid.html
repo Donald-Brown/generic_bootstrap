@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../node_modules/prismjs/themes/prism-coy.css" />
+    <link rel="stylesheet" href="../css/main.min.css" />
+    <title>Bootstrap Training Pages</title>
+  </head>
+  <body class="mb-5">
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-sm border bg-light">
+          one of three col-sm
+        </div>
+        <div class="col-sm border bg-light">
+          two of three col-sm
+        </div>
+        <div class="col-sm border bg-light">
+          three of three col-sm
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <div class="row">
+        <div class="col border bg-light">
+          1 of 2 col
+        </div>
+        <div class="col border bg-light">
+          2 of 2 col
+        </div>
+      </div>
+      <div class="row">
+        <div class="col border bg-light">
+          1 of 3 col
+        </div>
+        <div class="col border bg-light">
+          2 of 3 col
+        </div>
+        <div class="col border bg-light">
+          3 of 3 col
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <div class="row">
+        <div class="col border bg-light">
+          <p class="text-center">
+            Create equal with columns that span multiple lines with w-100
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col border bg-light">.col</div>
+        <div class="col border bg-light">.col</div>
+        <div class="w-100"></div>
+        <div class="col border bg-light">.col</div>
+        <div class="col border bg-light">.col</div>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <div class="row">
+        <div class="col border bg-light">
+          1 of 3 .col
+        </div>
+        <div class="col-6 border bg-light">
+          2 of 3 .col-6 (wider)
+        </div>
+        <div class="col border bg-light">
+          3 of 3 .col
+        </div>
+      </div>
+      <div class="row">
+        <div class="col border bg-light">
+          1 of 3 .col
+        </div>
+        <div class="col-5 border bg-light">
+          3 of 3 .col
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-2 border bg-light">
+          1 of 3 .col .col-lg-2
+        </div>
+        <div class="col-md-auto border bg-light">
+          Variable width content col-md-auto
+        </div>
+        <div class="col col-lg-2 border bg-light">
+          3 of 3 .col .col-lg-2
+        </div>
+      </div>
+      <div class="row">
+        <div class="col border bg-light">
+          1 of 3 .col
+        </div>
+        <div class="col-md-auto border bg-light">
+          Variable width content .col-md-auto
+        </div>
+        <div class="col col-lg-2 border bg-light">
+          3 of 3 .col .col-lg-2
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <div class="row">
+        <div class="col border bg-light">.col</div>
+        <div class="col border bg-light">.col</div>
+        <div class="col border bg-light">.col</div>
+        <div class="col border bg-light">.col</div>
+      </div>
+      <div class="row">
+        <div class="col-8 border bg-light">.col-8</div>
+        <div class="col-4 border bg-light">.col-4</div>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 border bg-light">.col-md-8</div>
+        <div class="col-md-4 border bg-light">.col-md-4</div>
+      </div>
+      <div class="row">
+        <div class="col-sm border bg-light">.col-sm</div>
+        <div class="col-sm border bg-light">.col-sm</div>
+        <div class="col-sm border bg-light">.col-sm</div>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+      <div class="row">
+        <div class="col-md-8 border bg-light">.col-md-8</div>
+        <div class="col-6 col-md-4 border bg-light">.col-6 .col-md-4</div>
+      </div>
+
+      <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+      <div class="row">
+        <div class="col-6 col-md-4 border bg-light">.col-6 .col-md-4</div>
+        <div class="col-6 col-md-4 border bg-light">.col-6 .col-md-4</div>
+        <div class="col-6 col-md-4 border bg-light">.col-6 .col-md-4</div>
+      </div>
+
+      <!-- Columns are always 50% wide, on mobile and desktop -->
+      <div class="row">
+        <div class="col-6 border bg-light">.col-6</div>
+        <div class="col-6 border bg-light">.col-6</div>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <div class="row">
+        <div class="col border">
+          <p class="text-center">
+            Gutters can be responsively adjusted by breakpoint-specific padding
+            and negative margin utility classes. To change the gutters in a
+            given row, pair a negative margin utility on the .row and matching
+            padding utilities on the .cols. The .container or .container-fluid
+            parent may need to be adjusted too to avoid unwanted overflow, using
+            again matching padding utility.<br />
+            See code<br />
+            .container .px-lg-5 -- .row .mx-lg-n5
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container px-lg-5">
+      <div class="row mx-lg-n5">
+        <div class="col py-3 px-lg-5 border bg-light">col py-3 px-lg-5</div>
+        <div class="col py-3 px-lg-5 border bg-light">col py-3 px-lg-5</div>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <div class="row">
+        <div class="col border">
+          <p class="text-center">
+            Row columns .row .row-cols-2
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row row-cols-2">
+        <div class="col border bg-light">Column</div>
+        <div class="col border bg-light">Column</div>
+        <div class="col border bg-light">Column</div>
+        <div class="col border bg-light">Column</div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col border">
+          <p class="text-center">
+            Row columns .row .row-cols-3
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row row-cols-3">
+        <div class="col border bg-light">Column</div>
+        <div class="col border bg-light">Column</div>
+        <div class="col border bg-light">Column</div>
+        <div class="col border bg-light">Column</div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col border">
+          <p class="text-center">
+            Row columns .row .row-cols-4
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row row-cols-4">
+        <div class="col border bg-light">Column</div>
+        <div class="col border bg-light">Column</div>
+        <div class="col border bg-light">Column</div>
+        <div class="col border bg-light">Column</div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col border">
+          <p class="text-center">
+            Row columns .row .row-cols-1 .row-cols-sm-2 .row-cols-md-4
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+        <div class="col border bg-light">Column</div>
+        <div class="col border bg-light">Column</div>
+        <div class="col border bg-light">Column</div>
+        <div class="col border bg-light">Column</div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col border">
+          <p class="text-center">
+            Using Mixins
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <pre><code class="lang-js">
+.element {
+  // Three columns to start
+  @include row-cols(3);
+
+  // Five columns from medium breakpoint up
+  @include media-breakpoint-up(md) {
+    @include row-cols(5);
+  }
+}
+          </code></pre>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <div class="row">
+        <div class="col border">
+          <p class="text-center">
+            Alignment
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col border">
+          <p class="text-center">
+            .row .align-items-start
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row align-items-start box">
+        <div class="col border border-dark">
+          One of three columns
+        </div>
+        <div class="col border border-dark">
+          One of three columns
+        </div>
+        <div class="col border border-dark">
+          One of three columns
+        </div>
+      </div>
+        <div class="row">
+          <div class="col border">
+            <p class="text-center">
+              .row .align-items-center
+            </p>
+          </div>
+        </div>
+      <div class="row align-items-center box2">
+        <div class="col border border-dark">
+          One of three columns
+        </div>
+        <div class="col border border-dark">
+          One of three columns
+        </div>
+        <div class="col border border-dark">
+          One of three columns
+        </div>
+      </div>
+      <div class="row">
+        <div class="col border">
+          <p class="text-center">
+            .row .align-items-end
+          </p>
+        </div>
+      </div>
+      <div class="row align-items-end box">
+        <div class="col border border-dark">
+          One of three columns
+        </div>
+        <div class="col border border-dark">
+          One of three columns
+        </div>
+        <div class="col border border-dark">
+          One of three columns
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col border">
+          <p class="text-center">
+            .col .align-self-start -- .col .align-self-center -- .col .align-self-end
+          </p>
+        </div>
+      </div>
+      <div class="row box2">
+        <div class="col align-self-start border border-dark">
+          One of three columns
+        </div>
+        <div class="col align-self-center border border-dark">
+          One of three columns
+        </div>
+        <div class="col align-self-end border border-dark">
+          One of three columns
+        </div>
+      </div>
+    </div>
+    <br>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/prismjs/prism.js"></script>
+  </body>
+</html>
