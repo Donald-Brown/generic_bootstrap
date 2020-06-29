@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/main.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-coy.min.css" integrity="sha256-VcuSs+n31yebPlEcehu6PvnidJ808ScFBsK8+tJKX+Q=" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-coy.min.css"
+      integrity="sha256-VcuSs+n31yebPlEcehu6PvnidJ808ScFBsK8+tJKX+Q="
+      crossorigin="anonymous"
+    />
     <title>Bootstrap Training Pages</title>
   </head>
   <body class="mb-5">
@@ -260,7 +265,7 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <pre><code class="lang-js">
+          <pre><code class="lang-css">
 .element {
   // Three columns to start
   @include row-cols(3);
@@ -305,13 +310,13 @@
           One of three columns
         </div>
       </div>
-        <div class="row">
-          <div class="col border">
-            <p class="text-center">
-              .row .align-items-center
-            </p>
-          </div>
+      <div class="row">
+        <div class="col border">
+          <p class="text-center">
+            .row .align-items-center
+          </p>
         </div>
+      </div>
       <div class="row align-items-center box2">
         <div class="col border border-dark">
           One of three columns
@@ -342,12 +347,13 @@
         </div>
       </div>
     </div>
-    <br>
+    <br />
     <div class="container">
       <div class="row">
         <div class="col border">
           <p class="text-center">
-            .col .align-self-start -- .col .align-self-center -- .col .align-self-end
+            .col .align-self-start -- .col .align-self-center -- .col
+            .align-self-end
           </p>
         </div>
       </div>
@@ -363,7 +369,208 @@
         </div>
       </div>
     </div>
-    <br>
+    <br />
+    <div class="container">
+      <h2>Horizontal Alignment</h2>
+      <div class="row justify-content-start box">
+        <div class="col-4 border border-primary">
+          One of two columns
+        </div>
+        <div class="col-4 border border-dark">
+          One of two columns
+        </div>
+      </div>
+      <div class="row justify-content-center box2">
+        <div class="col-4 border border-dark">
+          One of two columns
+        </div>
+        <div class="col-4 border border-primary">
+          One of two columns
+        </div>
+      </div>
+      <div class="row justify-content-end box">
+        <div class="col-4 border border-dark">
+          One of two columns
+        </div>
+        <div class="col-4 border border-primary">
+          One of two columns
+        </div>
+      </div>
+      <div class="row justify-content-around box2">
+        <div class="col-4 border border-dark">
+          One of two columns
+        </div>
+        <div class="col-4 border border-primary">
+          One of two columns
+        </div>
+      </div>
+      <div class="row justify-content-between box">
+        <div class="col-4 border border-primary">
+          One of two columns
+        </div>
+        <div class="col-4 border border-dark">
+          One of two columns
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <h2>No Gutters</h2>
+      <div class="row no-gutters box">
+        <div class="col-sm-6 col-md-8 border border-dark">
+          .col-sm-6 .col-md-8
+        </div>
+        <div class="col-6 col-md-4 border border-primary">.col-6 .col-md-4</div>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <h2>Column Wrapping</h2>
+      <p>
+        If more than 12 columns are placed within a single row, each group of
+        extra columns will, as one unit, wrap onto a new line.
+      </p>
+      <div class="row bg-light">
+        <div class="col-9 border border-primary">.col-9</div>
+        <div class="col-4 border border-dark">
+          .col-4<br />Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets
+          wrapped onto a new line as one contiguous unit.
+        </div>
+        <div class="col-6 border border-primary">
+          .col-6<br />Subsequent columns continue along the new line.
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <h2>Column Breaks</h2>
+      <p>
+        Breaking columns to a new line in flexbox requires a small hack: add an
+        element with width: 100% wherever you want to wrap your columns to a new
+        line. Normally this is accomplished with multiple .rows, but not every
+        implementation method can account for this.
+      </p>
+      <div class="row">
+        <div class="col-6 col-sm-3 border border-primary">.col-6 .col-sm-3</div>
+        <div class="col-6 col-sm-3 border border-dark">.col-6 .col-sm-3</div>
+
+        <!-- Force next columns to break to new line -->
+        <div class="w-100"></div>
+
+        <div class="col-6 col-sm-3 border border-dark">.col-6 .col-sm-3</div>
+        <div class="col-6 col-sm-3 border border-primary">.col-6 .col-sm-3</div>
+      </div>
+      <p>
+        You may also apply this break at specific breakpoints with our
+        responsive display utilities.
+      </p>
+      <div class="row">
+        <div class="col-6 col-sm-4 border border-dark">.col-6 .col-sm-4</div>
+        <div class="col-6 col-sm-4 border border-primary">.col-6 .col-sm-4</div>
+
+        <!-- Force next columns to break to new line at md breakpoint and up -->
+        <div class="w-100 d-none d-md-block"></div>
+
+        <div class="col-6 col-sm-4 border border-primary">.col-6 .col-sm-4</div>
+        <div class="col-6 col-sm-4 border border-dark">.col-6 .col-sm-4</div>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <h2>Offset Classes</h2>
+      <p>
+        Move columns to the right using .offset-md-* classes. These classes
+        increase the left margin of a column by * columns. For example,
+        .offset-md-4 moves .col-md-4 over four columns.
+      </p>
+      <div class="row">
+        <div class="col-md-4 border border-dark">.col-md-4</div>
+        <div class="col-md-4 offset-md-4 border border-primary">
+          .col-md-4 .offset-md-4
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 offset-md-3 border border-primary">
+          .col-md-3 .offset-md-3
+        </div>
+        <div class="col-md-3 offset-md-3 border border-dark">
+          .col-md-3 .offset-md-3
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 offset-md-3 border border-primary">
+          .col-md-6 .offset-md-3
+        </div>
+      </div>
+      <h3>Another example</h3>
+      <div class="row">
+        <div class="col-sm-5 col-md-6 border border-dark">
+          .col-sm-5 .col-md-6
+        </div>
+        <div
+          class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 border border-primary"
+        >
+          .col-sm-5 .offset-sm-2 .col-md-6 .offset-md-0
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-5 col-lg-6 border border-dark">
+          .col-sm-6 .col-md-5 .col-lg-6
+        </div>
+        <div
+          class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0 border border-primary"
+        >
+          .col-sm-6 .col-md-5 .offset-md-2 .col-lg-6 .offset-lg-0
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <h2>Margin Utilites</h2>
+      <p>
+        With the move to flexbox in v4, you can use margin utilities like
+        .mr-auto to force sibling columns away from one another.
+      </p>
+      <div class="row">
+        <div class="col-md-4 border border-dark">.col-md-4</div>
+        <div class="col-md-4 ml-auto border border-dark">
+          .col-md-4 .ml-auto
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 ml-md-auto border border-dark">
+          .col-md-3 .ml-md-auto
+        </div>
+        <div class="col-md-3 ml-md-auto border border-dark">
+          .col-md-3 .ml-md-auto
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-auto mr-auto border border-dark">
+          .col-auto .mr-auto
+        </div>
+        <div class="col-auto border border-dark">.col-auto</div>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <h2>Nesting</h2>
+      <div class="row">
+        <div class="col-sm-9 border border-dark">
+          Level 1: .col-sm-9
+          <div class="row">
+            <div class="col-8 col-sm-6 border border-primary">
+              Level 2: .col-8 .col-sm-6
+            </div>
+            <div class="col-4 col-sm-6">
+              Level 2: .col-4 .col-sm-6
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    
 
 
 
@@ -384,7 +591,15 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-core.min.js" integrity="sha256-9h14mWYYiQGkeAKg2JtijbqApb56kgw57WN6sI6dwH0=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha256-3S2PESHNt0YNL65z57WuHPHIv12fibpBDXepyCGHftw=" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-core.min.js"
+      integrity="sha256-9h14mWYYiQGkeAKg2JtijbqApb56kgw57WN6sI6dwH0="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/autoloader/prism-autoloader.min.js"
+      integrity="sha256-3S2PESHNt0YNL65z57WuHPHIv12fibpBDXepyCGHftw="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
