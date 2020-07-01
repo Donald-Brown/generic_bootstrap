@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-coy.min.css"
+      integrity="sha256-VcuSs+n31yebPlEcehu6PvnidJ808ScFBsK8+tJKX+Q="
+      crossorigin="anonymous"
+    />
+    <title>Typography</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>global settings</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <ul>
+            <li>
+              Use a native font stack that selects the best font-family for each
+              OS and device.
+            </li>
+            <li>
+              For a more inclusive and accessible type scale, we assume the
+              browser default root font-size (typically 16px) so visitors can
+              customize their browser defaults as needed.
+            </li>
+            <li>Use the $font-family-base, $font-size-base, and $line-height-base attributes as our typographic base applied to the <body>.</li>
+            <li>Set the global link color via $link-color and apply link underlines only on :hover.</li>
+            <li>Use $body-bg to set a background-color on the <body> (#fff by default).</li>
+          </ul>
+          <div class="row">
+            <div class="col">
+              <p>These styles can be found within _reboot.scss, and the global variables are defined in _variables.scss. Make sure to set $font-size-base in rem.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>h1 Bootstrap heading</h1>
+          <h2>h2 Bootstrap heading</h2>
+          <h3>h3 Bootstrap heading</h3>
+          <h4>h4 Bootstrap heading</h4>
+          <h5>h5 Bootstrap heading</h5>
+          <h6>h6 Bootstrap heading</h6>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>.h1 through .h6 classes are also available, for when you want to match the font styling of a heading but cannot use the associated HTML element.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p class="h1">p.h1 Bootstrap heading</p>
+          <p class="h2">p.h2 Bootstrap heading</p>
+          <p class="h3">p.h3 Bootstrap heading</p>
+          <p class="h4">p.h4 Bootstrap heading</p>
+          <p class="h5">p.h5 Bootstrap heading</p>
+          <p class="h6">p.h6 Bootstrap heading</p>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h3>Customizing headings</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h3>
+            Fancy display heading
+            <small class="text-muted">With faded secondary text</small>
+          </h3>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>
+            Traditional heading elements are designed to work best in the meat of your page content. When you need a heading to stand out, consider using a display heading—a larger, slightly more opinionated heading style. Keep in mind these headings are not responsive by default, but it’s possible to enable responsive font sizes.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h1 class="display-1">Display 1</h1>
+          <h1 class="display-2">Display 2</h1>
+          <h1 class="display-3">Display 3</h1>
+          <h1 class="display-4">Display 4</h1>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>
+            Make a paragraph stand out by adding .lead.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p class="lead">
+            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>
+            Inline text elements
+          </h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p>Styling for common inline HTML5 elements.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+          <p><del>This line of text is meant to be treated as deleted text.</del></p>
+          <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+          <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+          <p><u>This line of text will render as underlined</u></p>
+          <p><small>This line of text is meant to be treated as fine print.</small></p>
+          <p><strong>This line rendered as bold text.</strong></p>
+          <p><em>This line rendered as italicized text.</em></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p>.mark and .small classes are also available to apply the same styles as &lt;mark> and &lt;small> while avoiding any unwanted semantic implications that the tags would bring.</p>
+          <p>While not shown above, feel free to use &lt;b> and &lt;i> in HTML5. &lt;b> is meant to highlight words or phrases without conveying additional importance while &lt;i> is mostly for voice, technical terms, etc.&lt;/p>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>Abbreviations</h2>
+          <p>Stylized implementation of HTML’s &lt;abbr> element for abbreviations and acronyms to show the expanded version on hover. Abbreviations have a default underline and gain a help cursor to provide additional context on hover and to users of assistive technologies.</p>
+          <p>Add .initialism to an abbreviation for a slightly smaller font-size.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          
+          <p><abbr title="attribute">attr</abbr></p>
+          <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>Blockquotes</h2>
+          <p>For quoting blocks of content from another source within your document. Wrap &lt;blockquote class="blockquote"> around any HTML as the quote.</p>
+          <blockquote class="blockquote">
+            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          </blockquote>
+          <h3>Naming a source</h3>
+          <p>Add a &lt;footer class="blockquote-footer"> for identifying the source. Wrap the name of the source work in &lt;cite>.</p>
+          <blockquote class="blockquote">
+            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+          </blockquote>
+          <h3>Alignment</h3>
+          <p>Use text utilities as needed to change the alignment of your blockquote.</p>
+          <blockquote class="blockquote text-center">
+            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+          </blockquote>
+          <blockquote class="blockquote text-right">
+            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>Lists</h2>
+          <h3>Unstyled</h3>
+          <p>Remove the default list-style and left margin on list items (immediate children only). This only applies to immediate children list items, meaning you will need to add the class for any nested lists as well.</p>
+          <ul class="list-unstyled">
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Consectetur adipiscing elit</li>
+            <li>Integer molestie lorem at massa</li>
+            <li>Facilisis in pretium nisl aliquet</li>
+            <li>Nulla volutpat aliquam velit
+              <ul>
+                <li>Phasellus iaculis neque</li>
+                <li>Purus sodales ultricies</li>
+                <li>Vestibulum laoreet porttitor sem</li>
+                <li>Ac tristique libero volutpat at</li>
+              </ul>
+            </li>
+            <li>Faucibus porta lacus fringilla vel</li>
+            <li>Aenean sit amet erat nunc</li>
+            <li>Eget porttitor lorem</li>
+          </ul>
+          <h3>Inline</h3>
+          <p>Remove a list’s bullets and apply some light margin with a combination of two classes, .list-inline and .list-inline-item.</p>
+          <ul class="list-inline">
+            <li class="list-inline-item">Lorem ipsum</li>
+            <li class="list-inline-item text-primary">Phasellus iaculis</li>
+            <li class="list-inline-item">Nulla volutpat</li>
+          </ul>
+          <h3>Description list alignment</h3>
+          <p>Align terms and descriptions horizontally by using our grid system’s predefined classes (or semantic mixins). For longer terms, you can optionally add a .text-truncate class to truncate the text with an ellipsis.</p>
+          <dl class="row">
+            <dt class="col-sm-3">Description lists</dt>
+            <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+          
+            <dt class="col-sm-3">Euismod</dt>
+            <dd class="col-sm-9">
+              <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
+              <p>Donec id elit non mi porta gravida at eget metus.</p>
+            </dd>
+          
+            <dt class="col-sm-3">Malesuada porta</dt>
+            <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+          
+            <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+            <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+          
+            <dt class="col-sm-3">Nesting</dt>
+            <dd class="col-sm-9">
+              <dl class="row">
+                <dt class="col-sm-4">Nested definition list</dt>
+                <dd class="col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
+              </dl>
+            </dd>
+          </dl>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>Responsive font sizes</h2>
+          <p>Bootstrap v4.3 ships with the option to enable responsive font sizes, allowing text to scale more naturally across device and viewport sizes. <abbr title="responsive font size">RFS</abbr> can be enabled by changing the $enable-responsive-font-sizes Sass variable to true and recompiling Bootstrap.</p>
+          <p>To support <abbr title="responsive font size">RFS</abbr>, we use a Sass mixin to replace our normal font-size properties. Responsive font sizes will be compiled into calc() functions with a mix of rem and viewport units to enable the responsive scaling behavior. More about RFS and its configuration can be found on its GitHub repository.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-core.min.js"
+      integrity="sha256-9h14mWYYiQGkeAKg2JtijbqApb56kgw57WN6sI6dwH0="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/autoloader/prism-autoloader.min.js"
+      integrity="sha256-3S2PESHNt0YNL65z57WuHPHIv12fibpBDXepyCGHftw="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
