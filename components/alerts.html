@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-coy.min.css"
+      integrity="sha256-VcuSs+n31yebPlEcehu6PvnidJ808ScFBsK8+tJKX+Q="
+      crossorigin="anonymous"
+    />
+    <title>Alerts</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>Examples</h2>
+          <p>
+            Alerts are available for any length of text, as well as an optional
+            dismiss button. For proper styling, use one of the eight required
+            contextual classes (e.g., .alert-success). For inline dismissal, use
+            the alerts jQuery plugin.
+          </p>
+          <div class="alert alert-primary" role="alert">
+            A simple primary alert—check it out!
+          </div>
+          <div class="alert alert-secondary" role="alert">
+            A simple secondary alert—check it out!
+          </div>
+          <div class="alert alert-success" role="alert">
+            A simple success alert—check it out!
+          </div>
+          <div class="alert alert-danger" role="alert">
+            A simple danger alert—check it out!
+          </div>
+          <div class="alert alert-warning" role="alert">
+            A simple warning alert—check it out!
+          </div>
+          <div class="alert alert-info" role="alert">
+            A simple info alert—check it out!
+          </div>
+          <div class="alert alert-light" role="alert">
+            A simple light alert—check it out!
+          </div>
+          <div class="alert alert-dark" role="alert">
+            A simple dark alert—check it out!
+          </div>
+          <h2>Link color</h2>
+          <p>
+            Use the .alert-link utility class to quickly provide matching
+            colored links within any alert
+          </p>
+          <div class="alert alert-primary" role="alert">
+            A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+          </div>
+          <div class="alert alert-secondary" role="alert">
+            A simple secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+          </div>
+          <div class="alert alert-success" role="alert">
+            A simple success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+          </div>
+          <div class="alert alert-danger" role="alert">
+            A simple danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+          </div>
+          <div class="alert alert-warning" role="alert">
+            A simple warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+          </div>
+          <div class="alert alert-info" role="alert">
+            A simple info alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+          </div>
+          <div class="alert alert-light" role="alert">
+            A simple light alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+          </div>
+          <div class="alert alert-dark" role="alert">
+            A simple dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+          </div>
+          <h2>Additional content</h2>
+          <p>Alerts can also contain additional HTML elements like headings, paragraphs and dividers</p>
+          <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">Well done!</h4>
+            <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+            <hr>
+            <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+          </div>
+          <h2>Dismissing</h2>
+          <p>Using the alert JavaScript plugin, it’s possible to dismiss any alert inline. Here’s how</p>
+          <ul>
+            <li>Be sure you’ve loaded the alert plugin, or the compiled Bootstrap JavaScript</li>
+            <li>If you’re building our JavaScript from source, it requires util.js. The compiled version includes this.</li>
+            <li>Add a dismiss button and the .alert-dismissible class, which adds extra padding to the right of the alert and positions the .close button</li>
+            <li>On the dismiss button, add the data-dismiss="alert" attribute, which triggers the JavaScript functionality. Be sure to use the &lt;button&gt; element with it for proper behavior across all devices.</li>
+            <li>To animate alerts when dismissing them, be sure to add the .fade and .show classes</li>
+          </ul>
+          <p>You can see this in action with a live demo:</p>
+          <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <h2>see documentation for further info on js events and methods</h2>
+
+
+
+          <button type="button" class="rounded">
+            <a href="../index.html">Back</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-core.min.js"
+      integrity="sha256-9h14mWYYiQGkeAKg2JtijbqApb56kgw57WN6sI6dwH0="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/autoloader/prism-autoloader.min.js"
+      integrity="sha256-3S2PESHNt0YNL65z57WuHPHIv12fibpBDXepyCGHftw="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
